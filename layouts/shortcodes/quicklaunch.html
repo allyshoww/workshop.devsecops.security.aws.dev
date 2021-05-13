@@ -1,0 +1,21 @@
+<!-- 
+    ! Parameters Used
+
+    region-code - eg eu-west-2
+    region - eg US (Ohio)
+    stackname - eg Sample Web App
+    template-url - URL to the CloudFormation template in S3
+ -->
+
+
+<tr>
+    <td>
+        <strong>{{ with .Get "region" }}{{.}}{{ end }}</strong>
+        {{ with .Get "region-code" }}({{.}}){{ end }}
+    </td>
+    <td>
+        <a href="https://console.aws.amazon.com/cloudformation/home?region={{ .Get "region-code" }}#/stacks/new?stackName={{ .Get "stackname" }}&templateURL={{ .Get "template-url"}}" target="_blank">
+            <img src="../images/deploy-to-aws.png" alt="Deploy WAF Workshop Sample Web App">
+        </a>
+    </td>
+</tr>
