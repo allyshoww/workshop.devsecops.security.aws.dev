@@ -1,5 +1,5 @@
 ---
-title: Cleanup
+title: Limpeza do ambiente
 date: 2019-10-14T12:20:58+01:00
 weight: 8
 pre: <b>6. </b>
@@ -20,9 +20,10 @@ Se você estiver executando isso em sua própria conta. Você precisará excluir
 * Acesse o console do Amazon S3;
 * Vá para o bucket s3 que você criou no módulo 1 e exclua todo o conteúdo.
 * Depois que o bucket estiver vazio, exclua o bucket.
-* Procure por artifactstorebucket e exclua todo o conteúdo. Você terá que clicar no botão “Mostrar” para mostrar todas as versões de arquivos. * As versões dos arquivos também precisam ser excluídas antes que o bucket possa ser excluído.
+* Procure por artifactstorebucket e exclua todo o conteúdo. Você terá que clicar no botão “Mostrar” para mostrar todas as versões de arquivos. 
+* As versões dos arquivos também precisam ser excluídas antes que o bucket possa ser excluído.
 
-### Exclua a pilha do Cloudformation.
+### Exclua a stack do Cloudformation.
 * Acesse o console do AWS Cloudformation.
 * Procure a pilha distribuída no módulo 1 e delete a pilha.
 

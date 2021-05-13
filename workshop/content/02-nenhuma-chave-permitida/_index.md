@@ -11,7 +11,7 @@ Neste módulo, como engenheiro de segurança, você adicionará uma função lam
 
 ### Configuração do Lambda para procurar credenciais da AWS
 * Navegue até o console do Lambda e crie uma nova função a partir do zero.
-* Certifique-se de selecionar o runtime do Python 2.7 e a função do módulo*Pipelinel- IAM.
+* Certifique-se de selecionar o runtime do Python 3.8 e selecionar a role “{ * }-PipelineRole-{ * }“. 
 * Nomeie a função à sua escolha e depois clique em Criar função.
 * Defina o tempo do Lambda para 1 minuto.
 * cfn_secrets.py é fornecido no workshop. Abra isso no seu editor favorito.
@@ -25,7 +25,7 @@ Neste módulo, como engenheiro de segurança, você adicionará uma função lam
 ![source](../images/03-Source.png)
 * Adicione um novo grupo de ações.
 * Selecione “Adicionar grupo de ações”.
-* Crie um nome para sua ação de varredura de chaves, escolha o AWS Lambda no menu suspenso(dropdownß) Provedor de ações.
+Crie um nome para sua ação de varredura de chave, escolha AWS Lambda no menu suspenso Provedor de ação
 * Em “Nome da função”, selecione o nome que você deu à sua função Lambda na Etapa 2 acima.
 * TemplateSource no menu suspenso(dropdown) “Artefatos de entrada”.
 * Cole o conteúdo do buffer de pasta de cima em “Parâmetros do usuário (opcional)”

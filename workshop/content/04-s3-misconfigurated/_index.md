@@ -16,20 +16,20 @@ S3 é um dos principais serviços da AWS e é muito utilizado pelos clientes. El
 
 
 * Navegue até o console do Lambda e crie uma nova função a partir do zero;
-* Certifique-se de selecionar o tempo de execução do Python 2.7 e o módulo*PipelinelAmbdarole- IAM Role;
-* Nomeie a função à sua escolha. Criar função;
+* Certifique-se de selecionar o runtime do Python 3.8 e selecionar a role “{ * }-PipelineRole-{ * }“;
+* Nomeie a função à sua escolha e crie a função;
 * Defina o tempo do Lambda para 1 minuto;
 * cfn_s3_versioning.py é fornecido no workshop. Abra isso no seu editor favorito;
 * Cole o conteúdo do editor de código-fonte cfn_s3_versioning.py (aquele no console do Lambda), substituindo a função de espaço reservado inicial;
 * Navegue de volta ao Console do CodePipeline e abra seu pipeline DevSecops novamente;
-* Edite o pipeline usando o botão no canto superior direito Edit-Pipeline
+* Edite o pipeline usando o botão no canto superior direito
 ![Edit-Pipeline](../images/03-Edit-Pipeline.png)
 * Use o botão Editar estágio para o estágio StaticCodeAnalysis;
 * Selecione o ícone Editar para a função CFNParsing;
 * Copie o conteúdo de “Parâmetros do usuário (opcional)” para o buffer de pasta. Feche o pop-up Editar ação.
 ![Edit-Pipeline](../images/03-Edit-Pipeline.png)
 
-### Adicione um novo grupo de ações;
+### Crie um nome para sua ação verificação de versionamento de bucket S3, escolha o AWS Lambda no menu suspenso(dropdown) Provedor de ações.”;
 * Selecione “Adicionar grupo de ações”;
 * Crie um nome para sua ação de varredura de chaves, escolha o AWS Lambda no menu suspenso(dropdown) Provedor de ações.
 * Em “Nome da função”, selecione o nome que você deu à sua função Lambda na Etapa 2 acima.
@@ -39,4 +39,6 @@ S3 é um dos principais serviços da AWS e é muito utilizado pelos clientes. El
 * Sua nova função do Lambda agora está integrada ao seu pipeline.
 * Prossiga para o próximo módulo para testar sua função do Lambda.
 
+{{% notice tip %}}
 Que outras coisas você pode procurar em um modelo do AWS Cloudformation que você pode criar uma automação de segurança?
+{{% /notice %}}

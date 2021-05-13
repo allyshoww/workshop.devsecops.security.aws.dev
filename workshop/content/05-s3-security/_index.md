@@ -1,5 +1,5 @@
 ---
-title: Segurança no S3
+title: Configurando a Segurança do S3
 date: 2021-04-27T12:20:58+01:00
 weight: 7
 pre: <b>5. </b>

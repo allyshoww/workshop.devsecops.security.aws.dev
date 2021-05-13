@@ -13,7 +13,7 @@ Nesse workshop, vamos realizar algumas atividades de devsecops, usar algumas fer
 
 ##### Se você estiver usando sua própria conta da AWS, siga estas etapas: 
 
-* Faça o download ou clone esse repositório: https://github.com/aws-samples/secure-pipelines-in-aws-workshop
+* Faça o download ou clone esse repositório: https://devops.awssecworkshops.com/01-environment-setup/
 * Faça login com uma conta de nível Adminstrator;
 * Crie um bucket s3 na região US-West-2 Oregon;
 * Faça o upload dos dois arquivos zip para esse bucket;

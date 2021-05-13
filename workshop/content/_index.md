@@ -4,7 +4,7 @@ date: 2021-05-11T12:20:58+01:00
 weight: 1
 ---
 
-# Bem-vindo ao mundo do DevSecops!
+# Bem-vindo ao mundo do DevSecOps!
 
 Você já ouviu falar de DevOps. Hoje em dia, DevSecops está se tornando mais popular. Como as organizações podem permitir que os desenvolvedores criem produtos e serviços mais seguros? Neste workshop, você experimentará como as ferramentas e automação podem criar uma cultura consciente de segurança durante todo o ciclo de vida do desenvolvimento e, ao mesmo tempo, dimensionar para as demandas do negócio.
 

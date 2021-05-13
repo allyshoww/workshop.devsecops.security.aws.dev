@@ -19,4 +19,6 @@ Remova as credenciais.
 * Carregue o zip para s3.
 * Volte para o pipeline DevSecops e observe-o através dos estágios novamente.
   
+{{% notice tip %}}
 Você pode usar funções do IAM em vez disso?
+{{% /notice %}}

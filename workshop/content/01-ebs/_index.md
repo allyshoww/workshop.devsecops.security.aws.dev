@@ -6,11 +6,11 @@ pre: <b>1. </b>
 ---
 
 ## Introdução
-Como desenvolvedor, você fez upload dos arquivos zip para s3, você comprometeu o código no pipeline. Neste módulo, este exemplo mostra o que um desenvolvedor experimentaria quando o código não está em conformidade com os requisitos de segurança. Neste caso específico, há um requisito de segurança que os volumes do EBS devem ser criptografados.
+Como desenvolvedor, você fez upload dos arquivos zip para s3, você enviou o código no pipeline. Neste módulo, este exemplo mostra o que um desenvolvedor experimentaria quando o código não está em conformidade com os requisitos de segurança. Neste caso específico, há um requisito de segurança que os volumes do EBS devem ser criptografados.
 
 Para descobrir o primeiro erro de pipeline, clique em “Release Change”.
 
-Parece que o pipeline falhou no estágio “Análise de código estático”.
+Parece que o pipeline falhou no estágio "StaticCodeAnalysis".
 
 ![FirstPipelineError](../images/02-firstpipelineerror.png)
 
@@ -26,11 +26,11 @@ Clique no “i” ao lado de CFNParsing.
 * Fazer upload e substituir o arquivo zip existente em: “{CloudFormationStackName} -artifactstorebucket- {randomstring}
 * Volte para a tela do CodePipeline e veja os estágios passam pelo processamento novamente. Se você corrigiu o código corretamente, ele deve passar para o próximo estágio.
 * Reative a transição que você desativou anteriormente.
-* Quando chegar ao estágio ApproveTestStack, clique no botão Revisão e, em seguida, aprove a implantação. (Normalmente você receberá um e-mail pedindo aprovação manual, mas para os fins deste laboratório, não espere). Tudo deve continuar até que você tenha um gasoduto cheio de etapas que tiveram sucesso.
+* Quando chegar ao estágio ApproveTestStack, clique no botão Review e, em seguida, aprove a implantação. (Normalmente você receberá um e-mail pedindo aprovação manual, mas para os fins deste laboratório, não espere). Tudo deve continuar até que você tenha um pipeline cheio de etapas que foram bem-sucedidas
 
 ![TestStack](../images/02-ApprovalStage.png)
 
 {{% notice tip %}}
-Sinta-se livre para clicar em alguns ícones de detalhes para examinar o que aconteceu em cada estágio com mais detalhes. CFNParsing é uma função lambda é um script que faz várias verificações para conformidade de segurança.
+Sinta-se livre para clicar em alguns ícones de detalhes para examinar o que aconteceu em cada estágio com mais detalhes. CFNParsing é uma função lambda com um script que que faz várias verificações para conformidade de segurança.
 {{% /notice %}}
 
